@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: elasticsearch
+  namespace: default
+  labels:
+    component: elasticsearch
+    clustername: proofofconcept
+spec:
+  selector:
+    component: elasticsearch
+    clustername: proofofconcept
+  ports:
+  - name: transport
+    port: 9300
+    protocol: TCP
+  - name: http
+    port: 9200
+    protocol: TCP

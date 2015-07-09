@@ -1,0 +1,34 @@
+# Used only for plug-in install
+path:
+  plugins: /elasticsearch/plugins
+
+cluster:
+  name: elasticsearch
+
+node:
+  master: true
+  data: true
+
+cloud:
+  k8s:
+    service: elasticsearch
+    namespace: default
+
+discovery:
+  type: io.fabric8.elasticsearch.discovery.k8s.K8sDiscoveryModule
+  zen:
+    ping:
+      multicast:
+        enabled: false
+
+path:
+  data: /data/data
+  logs: /data/log
+  plugins: /elasticsearch/plugins
+  work: /data/work
+
+bootstrap:
+  mlockall: true
+
+http:
+  enabled: true
