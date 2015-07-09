@@ -1,7 +1,7 @@
 #elasticsearch-kubernetes
 Elasticsearch (1.6.0) cluster on top of Kubernetes made easy.
 
-This work is based on [pires/kubernetes-elasticsearch-cluster](https://github.com/pires/kubernetes-elasticsearch-cluster). It is a merged, simpler version that servers as loadbalancer, master and data node.
+This work is based on [pires/kubernetes-elasticsearch-cluster](https://github.com/pires/kubernetes-elasticsearch-cluster). It is a merged, simpler version that serves as loadbalancer, master and data node.
 
 ## Pre-requisites
 
