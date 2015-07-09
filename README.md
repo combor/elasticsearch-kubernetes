@@ -22,7 +22,7 @@ Wait until `elasticsearch-controller` is provisioned
 
 ### Validate
 
-I leave to you the steps to validate the provisioned pods, but first step is to wait for containers to be in ```RUNNING``` state and check the logs of the master (as in Elasticsearch):
+I leave to you the steps to validate the provisioned pods, but first step is to wait for containers to be in ```RUNNING``` state and check the logs of the pod (as in Elasticsearch):
 
 ```
 kubectl get pods
@@ -39,7 +39,7 @@ elasticsearch-chlp5          1/1       Running   0          5m
 Copy pod identifier and check the logs:
 
 ```
-kubectl logs elasticsearch-chlp5 elasticsearch-master
+kubectl logs elasticsearch-chlp5
 ```
 
 You should see something like this:
@@ -68,7 +68,7 @@ log4j:WARN No such property [maxBackupIndex] in org.apache.log4j.DailyRollingFil
 
 ### Scale
 
-Scaling each type of node to handle your cluster is as easy as:
+Scaling is as easy as:
 
 ```
 kubectl scale --replicas=3 rc elasticsearch
