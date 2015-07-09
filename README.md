@@ -15,10 +15,10 @@ This work is based on [pires/kubernetes-elasticsearch-cluster](https://github.co
 ```
 kubectl create -f service-account.yaml
 kubectl create -f elasticsearch-service.yaml
-kubectl create -f elasticsearch-master-controller.yaml
+kubectl create -f elasticsearch-controller.yaml
 ```
 
-Wait until `elasticsearch-master-controller` is provisioned
+Wait until `elasticsearch-controller` is provisioned
 
 ### Validate
 
