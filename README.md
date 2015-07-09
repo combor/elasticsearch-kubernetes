@@ -5,7 +5,7 @@ This work is based on [pires/kubernetes-elasticsearch-cluster](https://github.co
 
 ## Pre-requisites
 
-* Kubernetes cluster (tested with v0.19.0 on top of [Baremetal machines + CoreOS](https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/getting-started-guides/coreos/bare_metal_offline.md)
+* Kubernetes cluster (tested with v0.19.0 on top of [Baremetal machines + CoreOS](https://github.com/GoogleCloudPlatform/kubernetes/blob/master/docs/getting-started-guides/coreos/bare_metal_offline.md))
 * `kubectl` configured to access your cluster master API Server
 
 ## Test
