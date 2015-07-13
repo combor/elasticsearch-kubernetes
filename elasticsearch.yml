@@ -32,3 +32,6 @@ bootstrap:
 
 http:
   enabled: true
+  cors:
+    enabled: true
+    allow-origin: "/.*/"
